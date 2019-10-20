@@ -1,6 +1,6 @@
-import barcode
+import barcode as b
 from barcode.writer import ImageWriter
-A = barcode.get_barcode_class('ean13')
+A = b.get_barcode_class('ean13')
 a = A(input('enter the 12 number which has to converted into barcode: '), writer=ImageWriter())#in this format we have to give 12 digits
 a.save(input("enter the file name :"))
 #we can generate all types of barcode by just changing string in .get_barcode_class('here we have to change') by below list
